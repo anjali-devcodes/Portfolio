@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjali Daksh — QA Engineer & Front-End Developer</title>
+  <meta name="description" content="Portfolio of Anjali Daksh — Computer Science graduate specializing in QA testing and front-end development. Creator of DietBite, an Indian nutrition intelligence platform.">
+  <meta name="keywords" content="Anjali Daksh, QA Engineer, Software Tester, Front-End Developer, DietBite, React, FastAPI, Manual Testing">
+  <meta name="author" content="Anjali Daksh">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Anjali Daksh — QA Engineer & Front-End Developer">
+  <meta property="og:description" content="Creator of DietBite, an Indian nutrition intelligence platform. QA Engineer, Software Tester and Front-End Developer portfolio.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥗</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loading screen -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-mark">DB</span>
+      <div class="loader-bar"><span></span></div>
+      <span class="loader-text">calculating daily values…</span>
+    </div>
+  </div>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner" aria-label="Primary">
+      <a href="#home" class="nav-logo">
+        <span class="nav-logo-mark">AD</span>
+        <span class="nav-logo-text">Anjali Daksh</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#dietbite" class="nav-link" data-nav>DietBite</a></li>
+        <li><a href="#growthai" class="nav-link" data-nav>GrowthAI</a></li>
+        <li><a href="#education" class="nav-link" data-nav>Education</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8l1.8-1.8M18 6l1.8-1.8"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-small btn-primary nav-cta">Let's talk</a>
+        <button id="navToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+      </div>
+
+      <div class="section-inner hero-inner">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Available for internships &amp; entry-level roles</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Anjali Daksh</span>.<br>
+            I test, build, and ship <span class="hero-underline">web software</span> end to end.
+          </h1>
+          <p class="hero-sub">
+            Computer Science graduate working across manual QA and front-end development.
+            I recently took a nutrition-tech app called <strong>DietBite</strong> from a broken build
+            to a fully working, role-based platform — debugging, testing, and rebuilding its UI
+            along the way.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#dietbite" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+
+          <div class="hero-stats" role="list">
+            <div class="stat" role="listitem">
+              <span class="stat-value">3</span>
+              <span class="stat-label">User roles built</span>
+              <span class="stat-bar"><i style="--w:78%"></i></span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-value">6+</span>
+              <span class="stat-label">Feature modules shipped</span>
+              <span class="stat-bar"><i style="--w:64%"></i></span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-value">43</span>
+              <span class="stat-label">Foods in test dataset</span>
+              <span class="stat-bar"><i style="--w:43%"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="hero-panel glass">
+            <div class="hero-panel-head">
+              <span class="dot-row"><i></i><i></i><i></i></span>
+              <span class="hero-panel-title">Nutrition Summary</span>
+            </div>
+            <p class="hero-panel-sub">Combined totals · live preview</p>
+
+            <div class="nutrient-row">
+              <div class="nutrient-item">
+                <span class="nutrient-icon">🔥</span>
+                <div>
+                  <p class="nutrient-name">Energy</p>
+                  <p class="nutrient-value">110<small>kcal</small></p>
+                </div>
+              </div>
+              <div class="nutrient-item">
+                <span class="nutrient-icon">💪</span>
+                <div>
+                  <p class="nutrient-name">Protein</p>
+                  <p class="nutrient-value">22.5<small>g</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="rda-list">
+              <div class="rda-line">
+                <span>Protein</span>
+                <span class="rda-track"><i style="--w:38%"></i></span>
+                <span class="rda-pct">38%</span>
+              </div>
+              <div class="rda-line">
+                <span>Iron</span>
+                <span class="rda-track"><i style="--w:4%"></i></span>
+                <span class="rda-pct">4%</span>
+              </div>
+              <div class="rda-line">
+                <span>Potassium</span>
+                <span class="rda-track"><i style="--w:7%"></i></span>
+                <span class="rda-pct">7%</span>
+              </div>
+            </div>
+
+            <p class="hero-panel-caption">— live nutrient calculator screen, DietBite</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">A tester's eye, a builder's habits.</h2>
+
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p>
+              I'm a Computer Science graduate based in Agra, Uttar Pradesh, currently focused on
+              <strong>web development</strong>, <strong>Python</strong>, and <strong>software development</strong>,
+              alongside a strong interest in <strong>manual testing</strong> and structured
+              <strong>problem-solving</strong>.
+            </p>
+            <p>
+              My background sits at the intersection of building and breaking things on purpose.
+              I've worked hands-on across the full stack — React on the front end, FastAPI and Flask
+              on the back end, PostgreSQL and SQLite for data — but I approach every feature with a
+              QA mindset: what happens at the edges, what happens when a role shouldn't have access,
+              what happens when the network fails.
+            </p>
+            <p>
+              That combination came together on <a href="#dietbite">DietBite</a>, where I debugged a
+              stalled build back to life, verified authentication and role permissions by hand through
+              Swagger UI, and then kept improving the interface milestone by milestone.
+            </p>
+          </div>
+
+          <div class="about-cards" data-reveal>
+            <div class="mini-card">
+              <span class="mini-card-icon">🧪</span>
+              <h3>QA Mindset</h3>
+              <p>SDLC/STLC-aware testing, functional &amp; cross-browser checks, structured bug reports.</p>
+            </div>
+            <div class="mini-card">
+              <span class="mini-card-icon">🖥️</span>
+              <h3>Front-End</h3>
+              <p>React, JavaScript, responsive layouts with Tailwind CSS &amp; Bootstrap.</p>
+            </div>
+            <div class="mini-card">
+              <span class="mini-card-icon">🐍</span>
+              <h3>Python &amp; APIs</h3>
+              <p>FastAPI, Flask, REST integration, JWT-based auth flows.</p>
+            </div>
+            <div class="mini-card">
+              <span class="mini-card-icon">🧩</span>
+              <h3>Problem Solving</h3>
+              <p>Comfortable reading stack traces, dev tools, and Swagger UI to isolate root causes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="section-inner">
+        <p class="eyebrow">Skills</p>
+        <h2 class="section-title">What I actually work with.</h2>
+        <p class="section-lede">A focused set of tools I can confidently speak to in an interview — no filler.</p>
+
+        <div class="skills-grid">
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-title"><span class="skill-tag-icon">01</span> Languages</h3>
+            <div class="skill-chips">
+              <span class="chip"><i class="chip-bar" style="--w:90%"></i>HTML</span>
+              <span class="chip"><i class="chip-bar" style="--w:88%"></i>CSS</span>
+              <span class="chip"><i class="chip-bar" style="--w:82%"></i>JavaScript</span>
+              <span class="chip"><i class="chip-bar" style="--w:78%"></i>Python</span>
+              <span class="chip"><i class="chip-bar" style="--w:65%"></i>SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-title"><span class="skill-tag-icon">02</span> Tools</h3>
+            <div class="skill-chips">
+              <span class="chip"><i class="chip-bar" style="--w:85%"></i>Git</span>
+              <span class="chip"><i class="chip-bar" style="--w:85%"></i>GitHub</span>
+              <span class="chip"><i class="chip-bar" style="--w:80%"></i>VS Code</span>
+              <span class="chip"><i class="chip-bar" style="--w:70%"></i>Swagger / Postman</span>
+            </div>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group-title"><span class="skill-tag-icon">03</span> Other</h3>
+            <div class="skill-chips">
+              <span class="chip"><i class="chip-bar" style="--w:80%"></i>Responsive Web Design</span>
+              <span class="chip"><i class="chip-bar" style="--w:75%"></i>REST APIs</span>
+              <span class="chip"><i class="chip-bar" style="--w:72%"></i>Manual Testing (Basic)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECT: DIETBITE ============ -->
+    <section class="section project-hero" id="dietbite">
+      <div class="section-inner">
+        <p class="eyebrow">Featured Project</p>
+        <h2 class="section-title">DietBite</h2>
+        <p class="section-lede">Indian Nutrition Intelligence Platform — my flagship, full-stack project.</p>
+
+        <!-- Overview -->
+        <div class="project-overview" data-reveal>
+          <div class="project-overview-text">
+            <p>
+              DietBite is a web application built to help dietitians, nutritionists, and
+              health-conscious users create meal plans, calculate nutrients, and manage patient
+              nutrition using Indian food composition data — an area most mainstream nutrition
+              software overlooks in favor of Western food databases.
+            </p>
+          </div>
+          <div class="project-overview-meta">
+            <div class="meta-row"><span>Role</span><span>Owner / Full-Stack Developer</span></div>
+            <div class="meta-row"><span>Status</span><span>Actively improving</span></div>
+            <div class="meta-row"><span>Users</span><span>Admin · Dietitian · User</span></div>
+            <div class="meta-row"><span>Repo</span><span>anjali-devcodes/DietBite-portfolio</span></div>
+          </div>
+        </div>
+
+        <!-- Problem / Solution -->
+        <div class="ps-grid" data-reveal>
+          <div class="ps-card">
+            <span class="ps-label">Problem</span>
+            <p>Most nutrition software is built around Western food databases, so Indian foods
+              are missing or poorly represented. On top of that, manual nutrient calculation by
+              hand is slow and error-prone for dietitians managing multiple patients.</p>
+          </div>
+          <div class="ps-card ps-card-accent">
+            <span class="ps-label">Solution</span>
+            <p>DietBite brings food search, a live nutrient calculator, patient management, and
+              meal planning into one Indian-focused platform — backed by IFCT-based food
+              composition data and role-based access so dietitians and their patients see only
+              what's relevant to them.</p>
+          </div>
+        </div>
+
+        <!-- Features -->
+        <div class="features-block" data-reveal>
+          <h3 class="block-title">Core features</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <span class="feature-icon">🔐</span>
+              <h4>Secure Authentication</h4>
+              <p>JWT-based login with access &amp; refresh tokens, verified end-to-end through Swagger UI.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">🧑‍🤝‍🧑</span>
+              <h4>Role-Based Access</h4>
+              <p>Separate Admin, Dietitian, and User experiences with permission boundaries manually tested.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">📋</span>
+              <h4>Patient Management</h4>
+              <p>Dietitians track patients with ownership isolation, BMI, and measurement history.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">🔍</span>
+              <h4>Indian Food Search</h4>
+              <p>Filterable search across an IFCT-based database — currently 43 verified foods and growing.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">🧮</span>
+              <h4>Nutrient Calculator</h4>
+              <p>Build a meal, and see combined macro &amp; micronutrient totals with %RDA instantly.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-icon">🗓️</span>
+              <h4>Meal Plan Builder</h4>
+              <p>Multi-day meal planning with a searchable food picker and per-day nutrition averages.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technology -->
+        <div class="tech-block" data-reveal>
+          <h3 class="block-title">Technology used</h3>
+          <div class="tech-columns">
+            <div class="tech-col">
+              <h4>Frontend</h4>
+              <ul class="tech-list">
+                <li>React (Vite)</li>
+                <li>JavaScript (ES6)</li>
+                <li>Tailwind CSS</li>
+                <li>HTML5 / CSS3</li>
+              </ul>
+            </div>
+            <div class="tech-col">
+              <h4>Backend</h4>
+              <ul class="tech-list">
+                <li>FastAPI</li>
+                <li>Python 3</li>
+                <li>SQLAlchemy</li>
+                <li>Alembic (migrations)</li>
+              </ul>
+            </div>
+            <div class="tech-col">
+              <h4>Database &amp; Tools</h4>
+              <ul class="tech-list">
+                <li>PostgreSQL</li>
+                <li>JWT Authentication</li>
+                <li>Git &amp; GitHub</li>
+                <li>Swagger / Postman for API testing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Challenges -->
+        <div class="challenges-block" data-reveal>
+          <h3 class="block-title">Challenges I worked through</h3>
+          <ul class="challenge-list">
+            <li>
+              <span class="challenge-num">1</span>
+              <div><h4>Getting a stalled build running</h4>
+                <p>Diagnosed and resolved authentication, routing, API, and UI-rendering issues using
+                  browser dev tools and Swagger UI to get DietBite running end-to-end locally.</p></div>
+            </li>
+            <li>
+              <span class="challenge-num">2</span>
+              <div><h4>Verifying role-based permissions</h4>
+                <p>Manually tested permission boundaries across Admin, Dietitian, and User roles to make
+                  sure access control actually held up, not just looked correct in the UI.</p></div>
+            </li>
+            <li>
+              <span class="challenge-num">3</span>
+              <div><h4>A cross-platform import bug</h4>
+                <p>Found and fixed a case-sensitivity import bug (<code>Layout</code> vs <code>layout</code>)
+                  that worked on Windows but would silently break on Linux deployments.</p></div>
+            </li>
+            <li>
+              <span class="challenge-num">4</span>
+              <div><h4>Improving UI without touching the backend</h4>
+                <p>Ran a milestone-based UI/UX overhaul — loading &amp; empty states, error handling,
+                  responsive layout, and a productivity-focused meal plan builder — while deliberately
+                  preserving existing backend behavior.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Screenshots -->
+        <div class="shots-block" data-reveal>
+          <h3 class="block-title">Product screenshots</h3>
+          <div class="shots-grid" id="dietbiteGallery">
+            <figure class="shot-card shot-wide">
+              <img src="assets/images/dietbite-dashboard.png" alt="DietBite dietitian dashboard showing patient count, food search stats, and quick actions" loading="lazy" class="gallery-img" data-gallery="dietbite" tabindex="0" role="button" aria-label="Open larger view of Dietitian dashboard screenshot">
+              <figcaption>Dietitian dashboard — overview &amp; quick actions</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="assets/images/dietbite-food-search.png" alt="DietBite food search page with category filters and Indian food results" loading="lazy" class="gallery-img" data-gallery="dietbite" tabindex="0" role="button" aria-label="Open larger view of Food search screenshot">
+              <figcaption>Food search with category &amp; region filters</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="assets/images/dietbite-nutrient-calculator.png" alt="DietBite nutrient calculator showing macro and micronutrient totals for a meal" loading="lazy" class="gallery-img" data-gallery="dietbite" tabindex="0" role="button" aria-label="Open larger view of Nutrient calculator screenshot">
+              <figcaption>Live nutrient calculator with %RDA totals</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="assets/images/dietbite-signup.png" alt="DietBite account creation screen with role selection" loading="lazy" class="gallery-img" data-gallery="dietbite" tabindex="0" role="button" aria-label="Open larger view of Sign-up flow screenshot">
+              <figcaption>Sign-up flow with role selection</figcaption>
+            </figure>
+            <figure class="shot-card">
+              <img src="assets/images/dietbite-profile.png" alt="DietBite profile page for updating personal information and password" loading="lazy" class="gallery-img" data-gallery="dietbite" tabindex="0" role="button" aria-label="Open larger view of Profile settings screenshot">
+              <figcaption>Profile &amp; account settings</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="results-block" data-reveal>
+          <h3 class="block-title">Where it stands</h3>
+          <div class="results-grid">
+            <div class="result-card">
+              <span class="result-num">10</span>
+              <p>Backend milestones built — auth, RBAC, migrations, food DB, calculator, patient management, meal plans.</p>
+            </div>
+            <div class="result-card">
+              <span class="result-num">3</span>
+              <p>Distinct role-based experiences (Admin, Dietitian, User) with tested permission boundaries.</p>
+            </div>
+            <div class="result-card">
+              <span class="result-num">8+</span>
+              <p>UI/UX milestones shipped: design system, responsiveness, loading &amp; empty states, error handling, and more.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-cta" data-reveal>
+          <a href="https://github.com/anjali-devcodes/DietBite-portfolio" target="_blank" rel="noopener" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15v3.19c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+            View on GitHub
+          </a>
+          <a href="#contact" class="btn btn-ghost" title="Live deployment coming soon">
+            Live Demo <span class="badge-soon">coming soon</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECOND PROJECT: GROWTHAI STUDIO ============ -->
+    <section class="section section-alt" id="growthai">
+      <div class="section-inner">
+        <p class="eyebrow">Second Project</p>
+        <h2 class="section-title-sm">GrowthAI Studio</h2>
+        <p class="section-lede">AI-powered marketing content generator.</p>
+
+        <div class="growthai-grid" data-reveal>
+          <div class="growthai-shot">
+            <figure class="shot-card shot-card-contain">
+              <img src="assets/images/growthai-studio.png" alt="GrowthAI Studio dashboard showing the AI content generator with content type, tone of voice, and generated output panels" loading="lazy" class="gallery-img" data-gallery="growthai" tabindex="0" role="button" aria-label="Open larger view of GrowthAI Studio dashboard screenshot">
+              <figcaption>AI Content Generator dashboard</figcaption>
+            </figure>
+          </div>
+
+          <div class="growthai-text">
+            <p>
+              A full-stack Flask application that generates marketing content — Instagram
+              captions, email copy, and ad headlines — using the HuggingFace API. Built with
+              Jinja2 templating, a SQLite history layer, and a responsive Bootstrap 5 / AJAX
+              interface so results appear without a page reload.
+            </p>
+
+            <h4 class="mini-heading">Features</h4>
+            <ul class="simple-list">
+              <li>AI-generated captions, email copy &amp; ad headlines via HuggingFace API</li>
+              <li>No-reload generation using AJAX</li>
+              <li>SQLite-backed generation history</li>
+              <li>Manually tested across Chrome, Firefox &amp; Edge for form, API, and UI bugs</li>
+            </ul>
+
+            <h4 class="mini-heading">Technology</h4>
+            <div class="tag-row">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Jinja2</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Bootstrap 5</span>
+              <span class="tag">HuggingFace API</span>
+              <span class="tag">Render</span>
+            </div>
+
+            <a href="https://github.com/anjali-devcodes/GrowthAI-Studio" target="_blank" rel="noopener" class="btn btn-small btn-ghost" style="margin-top:1.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.15v3.19c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="section-inner">
+        <p class="eyebrow">Education</p>
+        <h2 class="section-title">Academic background.</h2>
+
+        <div class="timeline" data-reveal>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2022</span>
+              <h3>Bachelor of Technology — Computer Science</h3>
+              <p>F.E.T Agra College, Agra · AKTU University, Lucknow</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2019</span>
+              <h3>Diploma — Computer Science</h3>
+              <p>Government Girls Polytechnic, Jhansi · BTEUP, Lucknow</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-note" data-reveal>
+          <h4 class="mini-heading">Certifications</h4>
+          <div class="tag-row">
+            <span class="tag">Domestic Data Entry Operator — MSME PPDC</span>
+            <span class="tag">Advanced Diploma in Computer Hardware &amp; Networking — MSME PPDC</span>
+            <span class="tag">Entrepreneurship Skill Development Program — MSME PPDC</span>
+            <span class="tag">Entrepreneurship Awareness Camp — UPICO</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="section-inner">
+        <p class="eyebrow">Contact</p>
+        <h2 class="section-title">Let's build something.</h2>
+        <p class="section-lede">Open to QA Engineer, Software Tester, Front-End Developer, Web Developer, and Technical Support roles.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-reveal>
+            <a class="contact-link" href="mailto:Dakshanjali123@gmail.com">
+              <span class="contact-icon">✉️</span>
+              <div><span class="contact-label">Email</span><span class="contact-value">Dakshanjali123@gmail.com</span></div>
+            </a>
+            <a class="contact-link" href="tel:+917505941694">
+              <span class="contact-icon">📱</span>
+              <div><span class="contact-label">Phone</span><span class="contact-value">+91 75059 41694</span></div>
+            </a>
+            <a class="contact-link" href="https://github.com/anjali-devcodes" target="_blank" rel="noopener">
+              <span class="contact-icon">💻</span>
+              <div><span class="contact-label">GitHub</span><span class="contact-value">github.com/anjali-devcodes</span></div>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/anjali-1271ab417/" target="_blank" rel="noopener">
+              <span class="contact-icon">🔗</span>
+              <div><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/anjali-1271ab417</span></div>
+            </a>
+            <p class="contact-location">📍 Agra, Uttar Pradesh, India</p>
+          </div>
+
+          <form class="contact-form glass" id="contactForm" data-reveal novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+              <span class="form-error" data-error-for="name"></span>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              <span class="form-error" data-error-for="email"></span>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell me about the role or project…" required></textarea>
+              <span class="form-error" data-error-for="message"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="section-inner footer-inner">
+      <p>© <span id="year"></span> Anjali Daksh. Built from scratch with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer-links">
+        <a href="mailto:Dakshanjali123@gmail.com">Email</a>
+        <a href="https://github.com/anjali-devcodes" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/anjali-1271ab417/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- ============ SCREENSHOT LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Screenshot preview">
+    <div class="lightbox-overlay" data-lightbox-close></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous screenshot">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <figure class="lightbox-figure">
+        <img src="" alt="" id="lightboxImage">
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next screenshot">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+      <p class="lightbox-counter" id="lightboxCounter"></p>
+    </div>
+  </div>
+
+  <!-- EmailJS lets the contact form send messages straight to your inbox with no backend. -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
